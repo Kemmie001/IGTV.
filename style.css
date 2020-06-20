@@ -53,6 +53,12 @@ button{
 .social-media{
     display: flex;
 }
+.content-filler{
+    background-color: RGBA(255, 255, 255, 0.5);
+}
+.fixed-attachment{
+    background-attachment: fixed;
+}
 @media screen and (min-width:768px){
     .hide{
         display: none;
@@ -167,7 +173,7 @@ button{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -30px;
+    margin:auto 0;
     padding: 1rem;
     color:black;
     font-weight: bold;
@@ -176,8 +182,11 @@ button{
     border-radius: 0 0.2rem 0.2rem 0;
     user-select: none;
 }
+.arrow-left{
+    left: 20%;
+}
 .arrow-right{
-    right: 0;
+    right: 20%;
     border-radius: 0.2rem 0 0 0.2rem;
 }
 .arrow-left:hover, .arrow-right:hover{
@@ -210,10 +219,4 @@ button{
 @keyframes fade{
     from{opacity: 0.5;}
     to{opacity: 1;}
-}
-.content-filler{
-    background-color: RGBA(255, 255, 255, 0.5);
-}
-.fixed-attachment{
-    background-attachment: fixed;
 }
