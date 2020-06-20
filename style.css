@@ -84,6 +84,9 @@ button{
     .home{
         margin-top: -6px;
     }
+    .fixed-attachment{
+        background-attachment: scroll;
+    }
 }
 
 .wordCarousel {
