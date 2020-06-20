@@ -46,7 +46,6 @@ button{
 	color: RGB(255, 255, 255) !important;	
 }
 .fill-screen{
-    background-image: url("black-and-white-photo-of-drone-2050718.jpg");
     padding: 5rem;
     background-size: cover;
     background-position: center;
@@ -81,7 +80,6 @@ button{
     
     .gallery{
         width: 100%;
-        height: 50vh;
     }
     .home{
         margin-top: -6px;
@@ -212,4 +210,7 @@ button{
 }
 .content-filler{
     background-color: RGBA(255, 255, 255, 0.5);
+}
+.fixed-attachment{
+    background-attachment: fixed;
 }
