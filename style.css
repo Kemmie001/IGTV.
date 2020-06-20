@@ -1,6 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 footer{
     background-color: #333;
@@ -18,17 +18,18 @@ button{
 }
 .display-4{
     text-transform: capitalize;
-    text-align: center;
+    text-align: center; 
+    color:rgb(211, 194, 194);
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(250,250,240, 0.4);
+    color:rgb(211, 194, 194);
 }
 .brand-logo{
-    width: 60%;
+    width: 100%;
     border-radius: 20%;  
 }
 .navbar{
-    padding: 10px 15px;
+    padding: 1px 15px;
 }
 .logo{
     width: 5rem;
@@ -44,6 +45,12 @@ button{
  {
 	color: RGB(255, 255, 255) !important;	
 }
+.fill-screen{
+    background-image: url("black-and-white-photo-of-drone-2050718.jpg");
+    padding: 5rem;
+    background-size: cover;
+    background-position: center;
+}
 .social-media{
     display: flex;
 }
@@ -52,24 +59,94 @@ button{
         display: none;
     }
     nav{
-        height: 2rem;
+        height: 3rem;
     }
     .navbar{
-        padding:2rem 15px;
+        padding:1rem 15px;
     }
     .navbar-transparant{
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    .wordCarousel{
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
 @media screen and (max-width:768px){
     .navbar-text{
         display: none;
     }
+    
     .gallery{
         width: 100%;
         height: 50vh;
     }
+    .home{
+        margin-top: -6px;
+    }
+}
+
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: rgb(211, 194, 194);
+}
+    .dive{
+        overflow: hidden;
+        position: relative;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+    }
+        .liste{
+            font-family: Serif;
+            font-weight: 600;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+        }
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+.bag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container5{
     position: relative;
@@ -77,16 +154,19 @@ button{
 .gallery{
     width: 100%;
     height: 70vh;
+  
 }
 .slides{
     display: none;
+    width: 50%;
+    margin: 0 auto;
 }
 .arrow-left, .arrow-right{
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: -30px;
     padding: 1rem;
     color:black;
     font-weight: bold;
@@ -129,4 +209,7 @@ button{
 @keyframes fade{
     from{opacity: 0.5;}
     to{opacity: 1;}
+}
+.content-filler{
+    background-color: RGBA(255, 255, 255, 0.5);
 }

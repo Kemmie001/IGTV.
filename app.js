@@ -59,4 +59,8 @@ function showSlides (n){
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " activ";
 }
-
+$(function(){
+    $(window).on("load-resize", function(){
+        $(".fill-screen").css("height", window.innerHeight);
+    });
+});
