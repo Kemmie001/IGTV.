@@ -46,6 +46,7 @@ button{
 	color: RGB(255, 255, 255) !important;	
 }
 .fill-screen{
+    height: 70vh;
     background-size: cover;
     background-position: center;
 }
@@ -57,6 +58,14 @@ button{
 }
 .fixed-attachment{
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.font{
+    font-size: 2rem;
+}
+.side-picture{
+    width: 25vw;
 }
 @media screen and (min-width:768px){
     .hide{
@@ -68,9 +77,15 @@ button{
     .navbar{
         padding:1rem 15px;
     }
+    .side{
+        text-align: left;
+    }
     .navbar-transparant{
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    .container7{
+        padding: 3rem;
     }
     .wordCarousel{
         display: flex;
@@ -91,7 +106,9 @@ button{
     .navbar-text{
         display: none;
     }
-    
+    .side-picture{
+        display: none;
+    }
     .gallery{
         width: 100%;
     }
