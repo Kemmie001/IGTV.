@@ -65,7 +65,7 @@ button{
     font-size: 2rem;
 }
 .side-picture{
-    width: 25vw;
+    width: 100%;
 }
 @media screen and (min-width:768px){
     .hide{
@@ -230,7 +230,7 @@ button{
 }
 .remove{
     -webkit-animation-name: fade;
-    -webkit-animation-direction: 1s;
+    -webkit-animation-direction: normal;
     animation-name: fade;
     animation-duration: 1s;
 }
