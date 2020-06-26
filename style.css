@@ -36,9 +36,9 @@ button{
     padding: 1px 15px;
 }
 .logo{
-    width: 5rem;
+    width: 7rem;
     margin: 0;
-    /* padding: 10px; */
+    padding: 10px;
 }
 .navbar-transparant {
     background-color: RGBA(0,0,0, 0.5) !important;	
@@ -51,7 +51,7 @@ button{
 }
 .fill-screen{
     height: 90vh;
-    background-color: RGBA(136, 193, 247,0.9);
+    background-color: RGB(136, 193, 247);
     background-size: cover;
     background-position: center;
 }
@@ -82,6 +82,10 @@ button{
     -o-transform: rotate(360deg);
     transform:rotate(360deg);
 }
+.bg-infor{
+    text-align: center;
+   
+}
 @media screen and (min-width:768px){
     .hide{
         display: none;
@@ -98,6 +102,15 @@ button{
     .navbar-transparant{
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    .mid{
+        margin-top: 5rem;
+    }
+    .mid > h2{
+        padding: 3rem;
+    }
+    .liste{
+        margin-bottom: 55px;
     }
     .rowe{
         display: grid;
@@ -122,8 +135,11 @@ button{
     .story{
         font-size: 1.5rem;
     }
+    .logoe{
+        margin: 1rem;
+    }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .navbar-text{
         display: none;
     }
@@ -142,6 +158,9 @@ button{
     .leftt{
         text-align: center;
     }
+    .logoe{
+        margin:1rem auto;
+    }
 }
 
 .wordCarousel {
@@ -154,7 +173,7 @@ button{
         position: relative;
         height: 65px;
         padding-top: 10px;
-        margin-top: -10px;
+        margin-bottom: -10px;
     }
         .liste{
             font-family: Serif;
@@ -163,9 +182,9 @@ button{
             margin-bottom: 45px;
             display: block;
         }
-.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip2 { animation: flip2 1s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 3s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 
 @keyframes flip2 {
     0% { margin-top: -180px; }
@@ -184,7 +203,7 @@ button{
     66% { margin-top: -90px; }
     71% { margin-top: 0px; }
     99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
+    100% { margin-top: 270px; }
 }
 
 @keyframes flip4 {
@@ -299,4 +318,13 @@ button{
   }
   #myBtn:hover {
     background-color: RGBA(20, 25, 20,0.5); 
+  }
+  .logoe{
+      border-radius:50% ;
+      border: solid ;
+      width: 7rem;
+      padding: 1rem;
+  }
+  .star{
+      color: gold;
   }
