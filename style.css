@@ -107,10 +107,11 @@ button{
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        align-content: center;
+        align-items: center;
     }
     .leftt{
         text-align: left;
+        align-self: center;
     }
     .wordCarousel{
         display: flex;
@@ -127,7 +128,11 @@ button{
         font-size: 1.5rem;
     }
     .logoe{
-        margin: 1rem;
+        margin:0.5rem 3rem;
+    }
+    .side{
+        width: 50vw; 
+       margin: 0 auto;
     }
 }
 @media screen and (max-width:768px){
@@ -152,11 +157,12 @@ button{
     .logoe{
         margin:1rem auto;
     }
+    .side{
+        width: 70vw; 
+       margin: 0 auto;
+    }
 }
-.side{
-    width: 50vw; 
-   margin: 0 auto;
-}
+
 .wordCarousel {
     font-size: 36px;
     font-weight: 100;
