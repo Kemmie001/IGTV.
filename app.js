@@ -1,3 +1,4 @@
+
 var element	= 	$('.navbar');
 $(window).on("scroll", function () {
     if ($(this).scrollTop() > 100) {
@@ -91,3 +92,6 @@ function topFunction(){
     document.body.scrollTop = 0; //For Safari
     document.documentElement.scrollTop = 0; //For Chrome, Firefox, IE and Opera
 }
+
+//WOW JS
+new WOW().init();
