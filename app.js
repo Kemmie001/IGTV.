@@ -1,3 +1,5 @@
+// import animate.css from 'animate.css';
+
 
 var element	= 	$('.navbar');
 $(window).on("scroll", function () {
