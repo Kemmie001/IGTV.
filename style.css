@@ -33,11 +33,12 @@ button{
     color:white;
 }
 .brand-logo{
-    width: 100%;
-    border-radius: 20%;  
+    height: 3rem;
+    width: 7rem;
+    padding: 0.5rem;  
 }
 .navbar{
-    padding: 1px 15px;
+    padding: 1px 10px;
 }
 .logo{
     width: 7rem;
@@ -100,7 +101,7 @@ button{
         height: 3rem;
     }
     .navbar{
-        padding:1rem 15px;
+        padding:1rem;
     }
     .navbar-transparant{
         padding-bottom: 20px;
@@ -118,7 +119,7 @@ button{
     }
     .leftt{
         text-align: left;
-        align-self: start;
+    
     }
 
     .wordCarousel{
@@ -143,7 +144,14 @@ button{
         height: 70vh;
     }
     .logo{
-        padding: 1rem;
+        padding: 2rem;
+        margin-right:5rem ;
+    }
+    header{
+        height: 2rem;
+    }
+    nav{
+        height: 5rem;
     }
 }
 @media screen and (max-width:767px){
