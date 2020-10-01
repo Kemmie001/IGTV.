@@ -65,14 +65,18 @@
                                      <h6 class="story">Have a question or inquiry? <b class="font-weight-bold">Simply fill out the form below</b></h6>
                                      <div class="row pt-4">
                                      <section class="col-sm-6 wow slideInLeft">
-                                                 <form method="POST" action="https://api.slapform.com/acemedia21@gmail.com">
+                                         <div class="alert">
+                                             Your message has been sent.
+                                         </div>
+                                                 <div class="form-group">
+                                                     <form>
                                                      <label for="name" class="font-weight-bold">Name <span>*</span></label><br>
                                                     <div class="row pb-2">
                                                         <div class="col-lg-6 pb-2">
                                                          <input type="text" name="firstname" required id="firstname" placeholder="first name" class="py-1">
                                                         </div>
                                                         <div class="col-lg-6">
-                                                         <input type="text" required name="lastname" id="firstname" placeholder="last name" class="py-1">
+                                                         <input type="text" required name="lastname" id="lastname" placeholder="last name" class="py-1">
                                                         </div>
                                                     </div>
                                                     <label for="email" class="font-weight-bold">Email <span>*</span></label><br>
@@ -84,9 +88,10 @@
                                                      <label for="phone-number" class="font-weight-bold">Phone <span>*</span></label><br>
                                                      <input type="tel" class="mb-3" name="phone-number" id="phone-number" placeholder="phone number" class="py-1"><br>
                                                      <label for="name" class="font-weight-bold">Message<span>*</span></label><br>
-                                                     <textarea name="message" rows="5" cols="30" placeholder="YOUR MESSAGE"></textarea><br>
-                                                     <button type="submit" class="mt-4 mb-4 bg-dark">SUBMIT</button>
-                                                 </form>
+                                                     <textarea id="message" name="message" rows="5" cols="30" placeholder="YOUR MESSAGE"></textarea><br>
+                                                     <button type="submit" class="mt-4 mb-4 bg-dark" id="submit">SUBMIT</button>
+                                                    </form>
+                                                    </div>
                                      </section>
                                      <aside class="col-sm-6 wow slideInRight">
                                          <h6 class="story">Talk to us</h6>
@@ -112,10 +117,13 @@
                     © 2020 All rights reserved. Powered By ACE MEDIA
                     </footer>
                     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
                     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
                     <script src="WOW-master/dist/wow.min.js"></script>
-                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+                    <script src="contact.js"></script>
                     <script src="app.js"></script>
 </body>
 </html>
